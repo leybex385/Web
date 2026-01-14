@@ -4,7 +4,167 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leybex — Executive Portfolio</title>
+:root {
+  --black: #0b0b0b;
+  --soft-black: #121212;
+  --gold: #c7a75f;
+  --white: #eaeaea;
+  --muted: #9a9a9a;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 0.85rem;
+  letter-spacing: 4px;
+}
+
+.nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 32px;
+  font-size: 0.85rem;
+}
+
+.nav-cta {
+  color: var(--gold);
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.2rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 32px;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+/* SECTIONS */
+.section {
+  padding: 140px 40px;
+}
+
+.section.dark {
+  background: var(--soft-black);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.narrow {
+  max-width: 720px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+/* EXPERTISE */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+}
+
+.expertise-item span {
+  color: var(--gold);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.expertise-item h3 {
+  margin: 16px 0;
+  font-weight: 400;
+}
+
+.expertise-item p {
+  color: var(--muted);
+}
+
+/* STATEMENT */
+.statement {
+  padding: 160px 40px;
+  text-align: center;
+}
+
+.statement blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--gold);
+}
+
+/* CONTACT */
+.contact p {
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+
+.contact-link {
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* FOOTER */
+.footer {
+  padding: 40px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
   <link rel="stylesheet" href="css/luxury.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>

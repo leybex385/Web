@@ -1,0 +1,95 @@
+import { Mail, Linkedin, MapPin, Building2 } from 'lucide-react';
+import { motion } from 'motion/react';
+
+export function Contact() {
+  return (
+    <section id="contact" className="px-6 py-24 bg-neutral-50">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-16">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-4xl md:text-5xl mb-6">Let's Connect</h2>
+            <p className="text-xl text-neutral-600 mb-12">
+              I'm always interested in discussing new opportunities, partnerships, 
+              and meaningful conversations about business and life.
+            </p>
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <Mail className="w-6 h-6 text-neutral-600 mt-1" />
+                <div>
+                  <p className="text-sm text-neutral-500 mb-1">Email</p>
+                  <a href="mailto:yulia@bestwayltl.com" className="text-lg hover:text-neutral-600 transition-colors">
+                    yulia@bestwayltl.com
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <MapPin className="w-6 h-6 text-neutral-600 mt-1" />
+                <div>
+                  <p className="text-sm text-neutral-500 mb-1">Location</p>
+                  <p className="text-lg">Greater Los Angeles Area, California</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <Building2 className="w-6 h-6 text-neutral-600 mt-1" />
+                <div>
+                  <p className="text-sm text-neutral-500 mb-1">Company</p>
+                  <p className="text-lg mb-1">BEST WAY GROUP INC</p>
+                  <p className="text-neutral-600">343 N Baldwin Park Blvd</p>
+                  <p className="text-neutral-600 mb-2">City of Industry, CA 91746</p>
+                  <a 
+                    href="http://www.bestwayltl.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-neutral-900 hover:text-neutral-600 transition-colors underline"
+                  >
+                    www.bestwayltl.com
+                  </a>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div 
+            className="bg-white rounded-2xl p-8 md:p-12"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h3 className="text-2xl mb-6">Professional Background</h3>
+            <div className="space-y-4 text-neutral-600">
+              <div>
+                <p className="text-sm text-neutral-500 mb-1">Education</p>
+                <p className="text-lg">MBA, Business Administration & Financial Economics</p>
+                <p>University of Hong Kong</p>
+              </div>
+              <div>
+                <p className="text-sm text-neutral-500 mb-1">Origin</p>
+                <p className="text-lg">Russia → United States (Since 2016)</p>
+              </div>
+              <div>
+                <p className="text-sm text-neutral-500 mb-1">Expertise</p>
+                <p className="text-lg">International Logistics, Strategic Planning, Cross-border E-commerce</p>
+              </div>
+              <div className="pt-4">
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-neutral-900 hover:text-neutral-600 transition-colors"
+                >
+                  <Linkedin className="w-5 h-5" />
+                  Connect on LinkedIn
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}

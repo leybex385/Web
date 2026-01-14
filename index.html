@@ -1,95 +1,142 @@
-import { Mail, Linkedin, MapPin, Building2 } from 'lucide-react';
-import { motion } from 'motion/react';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Executive Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-export function Contact() {
-  return (
-    <section id="contact" className="px-6 py-24 bg-neutral-50">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-16">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-4xl md:text-5xl mb-6">Let's Connect</h2>
-            <p className="text-xl text-neutral-600 mb-12">
-              I'm always interested in discussing new opportunities, partnerships, 
-              and meaningful conversations about business and life.
-            </p>
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <Mail className="w-6 h-6 text-neutral-600 mt-1" />
-                <div>
-                  <p className="text-sm text-neutral-500 mb-1">Email</p>
-                  <a href="mailto:yulia@bestwayltl.com" className="text-lg hover:text-neutral-600 transition-colors">
-                    yulia@bestwayltl.com
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <MapPin className="w-6 h-6 text-neutral-600 mt-1" />
-                <div>
-                  <p className="text-sm text-neutral-500 mb-1">Location</p>
-                  <p className="text-lg">Greater Los Angeles Area, California</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <Building2 className="w-6 h-6 text-neutral-600 mt-1" />
-                <div>
-                  <p className="text-sm text-neutral-500 mb-1">Company</p>
-                  <p className="text-lg mb-1">BEST WAY GROUP INC</p>
-                  <p className="text-neutral-600">343 N Baldwin Park Blvd</p>
-                  <p className="text-neutral-600 mb-2">City of Industry, CA 91746</p>
-                  <a 
-                    href="http://www.bestwayltl.com/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-neutral-900 hover:text-neutral-600 transition-colors underline"
-                  >
-                    www.bestwayltl.com
-                  </a>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div 
-            className="bg-white rounded-2xl p-8 md:p-12"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h3 className="text-2xl mb-6">Professional Background</h3>
-            <div className="space-y-4 text-neutral-600">
-              <div>
-                <p className="text-sm text-neutral-500 mb-1">Education</p>
-                <p className="text-lg">MBA, Business Administration & Financial Economics</p>
-                <p>University of Hong Kong</p>
-              </div>
-              <div>
-                <p className="text-sm text-neutral-500 mb-1">Origin</p>
-                <p className="text-lg">Russia → United States (Since 2016)</p>
-              </div>
-              <div>
-                <p className="text-sm text-neutral-500 mb-1">Expertise</p>
-                <p className="text-lg">International Logistics, Strategic Planning, Cross-border E-commerce</p>
-              </div>
-              <div className="pt-4">
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-neutral-900 hover:text-neutral-600 transition-colors"
-                >
-                  <Linkedin className="w-5 h-5" />
-                  Connect on LinkedIn
-                </a>
-              </div>
-            </div>
-          </motion.div>
-        </div>
+<!-- NAVIGATION -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <div class="logo">YOUR NAME</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact" class="btn">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1>Executive Leadership.<br>Global Vision.</h1>
+      <p>
+        Founder, strategist, and advisor helping organizations navigate
+        complexity, scale internationally, and build enduring value.
+      </p>
+      <a href="#contact" class="btn primary">Request a Conversation</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/portrait.jpg" alt="Executive Portrait">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container narrow">
+    <h2>Professional Profile</h2>
+    <p>
+      I am an internationally experienced executive and entrepreneur with a
+      career spanning strategy, operations, and high-stakes decision making.
+      My work focuses on aligning vision with execution in complex global
+      environments.
+    </p>
+    <p>
+      I collaborate with founders, boards, and leadership teams to unlock
+      growth, manage risk, and position organizations for long-term success.
+    </p>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise" class="section dark">
+  <div class="container">
+    <h2>Areas of Expertise</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Strategic Leadership</h3>
+        <p>Executive advisory, decision frameworks, long-term planning.</p>
       </div>
-    </section>
-  );
-}
+      <div class="card">
+        <h3>International Expansion</h3>
+        <p>Cross-border operations, logistics, and market entry strategy.</p>
+      </div>
+      <div class="card">
+        <h3>Financial Oversight</h3>
+        <p>Risk management, capital allocation, and growth optimization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section">
+  <div class="container">
+    <h2>Selected Achievements</h2>
+
+    <ul class="timeline">
+      <li>
+        <span>2023</span>
+        Led international expansion across multiple global markets.
+      </li>
+      <li>
+        <span>2021</span>
+        Advised executive teams on multi-million-dollar strategic initiatives.
+      </li>
+      <li>
+        <span>2018</span>
+        Founded and scaled operations in complex regulatory environments.
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section dark">
+  <div class="container narrow">
+    <h2>Professional Endorsements</h2>
+    <blockquote>
+      “An exceptional strategic thinker with rare global perspective and
+      operational discipline.”
+      <span>— Senior Partner, Global Firm</span>
+    </blockquote>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container narrow">
+    <h2>Engagements by Invitation</h2>
+    <p>
+      I selectively collaborate on high-impact projects and advisory roles.
+    </p>
+    <a href="#contact" class="btn primary">Initiate Contact</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container narrow">
+    <h2>Contact</h2>
+    <p>Email: <strong>youremail@domain.com</strong></p>
+    <p>Availability: Limited / By appointment</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    © 2026 Your Name. All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+</html>

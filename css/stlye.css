@@ -1,1 +1,161 @@
+:root {
+  --bg-dark: #0f1115;
+  --bg-light: #ffffff;
+  --text-dark: #111;
+  --text-light: #eaeaea;
+  --accent: #c9a45c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.narrow {
+  max-width: 800px;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section.dark {
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+/* HERO */
+.hero {
+  padding: 160px 0 120px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 14px 28px;
+  border: 1px solid var(--text-dark);
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.btn.primary {
+  background: var(--text-dark);
+  color: #fff;
+  border: none;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  padding: 40px;
+  background: #fff;
+  color: var(--text-dark);
+}
+
+/* TIMELINE */
+.timeline {
+  list-style: none;
+}
+
+.timeline li {
+  margin-bottom: 20px;
+}
+
+.timeline span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* CTA */
+.cta {
+  background: var(--accent);
+  color: #111;
+  text-align: center;
+  padding: 120px 0;
+}
+
+/* FOOTER */
+.footer {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  background: #000;
+  color: #aaa;
+}
 

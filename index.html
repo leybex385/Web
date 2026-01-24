@@ -1,119 +1,3196 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>GlobalVision Wealth Management</title>
-<link rel="stylesheet" href="styles.css" />
-</head>
-<body>
 
-<!-- Navigation Menu -->
-<nav class="navbar">
-    <div class="logo">GlobalVision WM</div>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="clients.html">Clients & Experience</a></li>
-        <li><a href="philanthropy.html">Philanthropy</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+<<!DOCTYPE html>
+  <html lang="en">
 
-<!-- Hero Section -->
-<header class="hero-section">
-    <div class="hero-content">
-        <h1>Strategic Wealth Stewardship & Long-Term Growth Investing</h1>
-        <p>We provide disciplined wealth management solutions designed to preserve capital, manage risk, and generate sustainable long-term growth across global markets.</p>
-        <a href="#about" class="btn-primary">Learn More</a>
+  <head>
+    <meta charset="UTF-8">
+    <title>Valence Medical Group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Valence Medical Group">
+    <meta property="og:description"
+      content="Entrepreneur and investor working at the intersection of international business, medical technology, and cross-border capital deployment.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valencemedicalgroup.com/">
+    <meta property="og:image" content="https://valencemedicalgroup.com/image/preview.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Valence Medical Group">
+    <meta name="twitter:description"
+      content="Entrepreneur and investor working at the intersection of international business, medical technology, and cross-border capital deployment.">
+    <meta name="twitter:image" content="https://valencemedicalgroup.com/image/preview.jpg">
+
+    <style>
+      :root {
+        --bg: #f7f6f3;
+        --panel: #ffffff;
+        --dark: #111;
+        --text: #1c1c1c;
+        --muted: #6f6f6f;
+        --radius: 22px;
+        --shadow: 0 30px 80px rgba(0, 0, 0, .08);
+        --gap: 100px;
+      }
+
+      * {
+        box-sizing: border-box
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.8;
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(247, 246, 243, .85);
+        backdrop-filter: blur(10px);
+        z-index: 100;
+      }
+
+      nav {
+        max-width: 1200px;
+        margin: auto;
+        padding: 22px 32px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .brand {
+        font-size: 12px;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+      }
+
+      .menu a {
+        margin-left: 32px;
+        text-decoration: none;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      section {
+        padding: var(--gap) 0
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 32px;
+      }
+
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding-top: 140px;
+      }
+
+      .hero h1 {
+        font-family: Playfair Display, serif;
+        font-size: 56px;
+        font-weight: 500;
+        margin-bottom: 24px;
+      }
+
+      .hero p {
+        max-width: 640px;
+        font-size: 18px;
+        color: var(--muted);
+      }
+
+      .label {
+        font-size: 12px;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 28px;
+      }
+
+      .panel {
+        background: var(--panel);
+        border-radius: var(--radius);
+        padding: 80px;
+        box-shadow: var(--shadow);
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: 1.2fr .8fr;
+        gap: 80px;
+      }
+
+      .dark {
+        background: var(--dark);
+        color: #e5e5e5;
+      }
+
+      .dark .panel {
+        background: #1b1b1b;
+        box-shadow: none;
+      }
+
+      .list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 60px;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: .8s ease
+      }
+
+      .reveal.show {
+        opacity: 1;
+        transform: none
+      }
+
+      .footer {
+        background: #0b0f14;
+        color: #9ca3af;
+        text-align: center;
+        padding: 100px 80px;
+        font-size: 14px;
+      }
+
+      @media(max-width:900px) {
+        .hero h1 {
+          font-size: 40px
+        }
+
+        .split,
+        .list {
+          grid-template-columns: 1fr
+        }
+
+        .panel {
+          padding: 48px
+        }
+      }
+
+      .hero {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      /* Background image */
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        background-image: url("heroclass.jpg");
+        background-size: cover;
+        /* landscape crop */
+        background-position: center;
+        /* balanced composition */
+        transform: scale(1.12);
+        /* avoids blur edges */
+        filter: blur(16px);
+        z-index: 1;
+      }
+
+      /* Dark overlay for contrast */
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 2;
+      }
+
+      /* Text content */
+      .hero-content {
+        position: relative;
+        z-index: 3;
+        max-width: 820px;
+        padding: 0 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .hero-content h1 {
+        font-size: clamp(3rem, 6vw, 4.5rem);
+        color: #fff;
+      }
+
+      .hero-content p {
+        margin-top: 1.5rem;
+        color: rgba(255, 255, 255, 0.85);
+        line-height: 1.7;
+        max-width: 720px;
+      }
+
+      .hero {
+        background-image: url("heroclass.jpg");
+        background-size: cover;
+        /* landscape crop */
+        background-position: center;
+        /* centered composition */
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Blur layer without affecting text */
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("heroclass.jpg");
+        background-size: cover;
+        background-position: center;
+        filter: blur(16px);
+        transform: scale(1.12);
+        /* prevents blur edges */
+        z-index: 0;
+      }
+
+      /* Optional dark overlay for readability */
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.35);
+        z-index: 1;
+      }
+
+      /* Ensure existing hero content stays on top */
+      .hero>* {
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      /* Hide video visually but keep structure intact */
+      .hero-video {
+        display: none;
+      }
+
+      /* Blurred image background */
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("heroclass.jpg");
+        background-size: cover;
+        /* landscape fit */
+        background-position: center;
+        /* balanced crop */
+        background-repeat: no-repeat;
+        filter: blur(18px);
+        transform: scale(1.15);
+        /* prevents blur edges */
+        z-index: 0;
+      }
+
+      /* Dark overlay for text contrast */
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+      }
+
+      /* Keep content sharp */
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      /* Hide video but keep structure */
+      .hero-video {
+        display: none;
+      }
+
+      /* Blurred image background */
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("image/heroclass.jpg");
+        /* ← FIXED PATH */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(18px);
+        transform: scale(1.15);
+        z-index: 0;
+      }
+
+      /* Overlay */
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+      }
+
+      /* Content stays sharp */
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("image/heroclass.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(7px);
+        /* ← tuned blur */
+        transform: scale(1.08);
+        /* smaller scale for lighter blur */
+        z-index: 0;
+      }
+
+      /* ===== HERO PROFILE / ABOUT ===== */
+      .hero-profile {
+        background: #f7f8fa;
+        padding: 140px 0;
+      }
+
+      .hero-profile-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 60px;
+        display: grid;
+        grid-template-columns: 420px 1fr;
+        gap: 120px;
+        align-items: center;
+      }
+
+      /* Image */
+      .hero-profile-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 18px;
+        object-fit: cover;
+        background: #eee;
+      }
+
+      /* Content */
+      .hero-profile-content h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 42px;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+        margin-bottom: 28px;
+        color: #111;
+      }
+
+      .hero-profile-content p {
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 17px;
+        line-height: 1.85;
+        color: #6b7280;
+        max-width: 560px;
+      }
+
+      /* ===== Responsive ===== */
+      @media (max-width: 900px) {
+        .hero-profile-inner {
+          grid-template-columns: 1fr;
+          gap: 60px;
+          padding: 0 28px;
+        }
+
+        .hero-profile-content h2 {
+          font-size: 34px;
+        }
+      }
+
+      .hero-family {
+        background: #f6f7f9;
+        padding: 120px 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .hero-family-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        margin-bottom: 18px;
+        color: #1a1a1a;
+      }
+
+
+
+      .hero-family-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 44px;
+        font-weight: 600;
+        margin-bottom: 28px;
+        color: #1a1a1a;
+      }
+
+      .hero-family-card p {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        line-height: 1.9;
+        color: #6b7280;
+        max-width: 880px;
+      }
+
+      /* HERO FAMILY – Industry Perspective */
+      .hero-family {
+        padding: 120px 0;
+        background: #f5f6f8;
+      }
+
+      .hero-family-card {
+        max-width: 960px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 64px 72px;
+        border-radius: 20px;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+      }
+
+      /* Title — SAME size & font as About */
+      .hero-family-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 24px;
+        /* matches About */
+        font-weight: 500;
+        color: #1c1f26;
+        margin-bottom: 24px;
+      }
+
+      .hero-family-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        /* ⬅️ smaller, refined, section-label size */
+        font-weight: 500;
+        color: #1c1f26;
+        margin-bottom: 18px;
+      }
+
+      /* Body text */
+      .hero-family-card p {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+        color: #6b7280;
+        max-width: 760px;
+      }
+
+      .hero-family-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 16px;
+        color: #1a1a1a;
+      }
+
+      .hero-family-card p {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.75;
+        color: #6b7280;
+        margin-top: 4px;
+      }
+
+      .section.reveal.show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 120px 20px;
+      }
+
+      .focus-card {
+        background: #fbf7ef;
+        max-width: 820px;
+        padding: 64px 72px;
+        border-radius: 18px;
+        text-align: center;
+      }
+
+      .focus-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 34px;
+        font-weight: 600;
+        margin-bottom: 28px;
+        color: #1a1a1a;
+      }
+
+      .focus-card p {
+        font-family: "Inter", sans-serif;
+        font-size: 17px;
+        line-height: 1.8;
+        color: #555c66;
+      }
+
+      /* Professional Focus — huangshiyan.com match */
+
+      .section.reveal.show {
+        display: flex;
+        justify-content: center;
+        padding: 120px 24px;
+      }
+
+      .focus-card {
+        max-width: 760px;
+        background: #fbf7ef;
+        padding: 64px 72px;
+        border-radius: 18px;
+        text-align: center;
+      }
+
+      /* Title */
+      .focus-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        /* key match */
+        font-weight: 500;
+        /* lighter than before */
+        letter-spacing: 0.2px;
+        margin-bottom: 24px;
+        color: #1a1a1a;
+      }
+
+      /* Description */
+      .focus-card p {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        /* exact visual scale */
+        line-height: 1.85;
+        font-weight: 400;
+        color: #5a6270;
+      }
+
+      /* === Professional Focus (exact match) === */
+
+      .section.reveal.show {
+        position: relative;
+        padding: 140px 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .focus-card {
+        max-width: 820px;
+        background: #fbf7ef;
+        padding: 72px 80px;
+        border-radius: 22px;
+        text-align: center;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
+      }
+
+      /* Title */
+      .focus-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 32px;
+        /* exact visual size */
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        margin-bottom: 28px;
+        color: #1c2230;
+      }
+
+      /* Description */
+      .focus-card p {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 1.9;
+        font-weight: 400;
+        color: #5f6673;
+        max-width: 640px;
+        margin: 0 auto;
+      }
+
+      /* ===============================
+   SECTION HEADINGS (Unified)
+   =============================== */
+
+      /* Industry Perspective */
+      .hero-family-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 32px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        margin-bottom: 20px;
+        color: #1a1a1a;
+      }
+
+      /* Professional Focus */
+      .reveal-show h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 32px;
+        /* same size as Industry Perspective */
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        margin-bottom: 20px;
+        color: #1a1a1a;
+      }
+
+      /* ==================================================
+   FINAL OVERRIDES — DO NOT DUPLICATE ABOVE
+   ================================================== */
+
+      /* Industry Perspective */
+      .hero-family-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 28px;
+        /* space before description */
+        color: #1a1a1a;
+      }
+
+      /* Professional Focus — MATCH Industry Perspective */
+      .focus-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 32px;
+        /* EXACT SAME SIZE */
+        font-weight: 500;
+        margin-bottom: 28px;
+        color: #1a1a1a;
+      }
+
+      /* ===== Background Narrative + Professional Experience ===== */
+
+      .background-section {
+        padding: 140px 32px;
+        background: #f5f6f8;
+      }
+
+      .background-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+      }
+
+      .background-card {
+        background: #ffffff;
+        padding: 72px 72px;
+        border-radius: 24px;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
+      }
+
+      .background-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 28px;
+        color: #1a1a1a;
+      }
+
+      .background-card p {
+        font-family: "Inter", sans-serif;
+        font-size: 17px;
+        line-height: 1.9;
+        color: #6b7280;
+      }
+
+      /* Experience formatting */
+      .experience-item strong {
+        font-size: 16px;
+        color: #111;
+      }
+
+      .experience-period {
+        display: inline-block;
+        margin: 6px 0 14px;
+        color: #6b7280;
+        font-size: 14px;
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        .background-grid {
+          grid-template-columns: 1fr;
+          gap: 48px;
+        }
+
+        .background-card {
+          padding: 48px;
+        }
+      }
+
+      /* ===============================
+   Education Section (huangshiyan style)
+   =============================== */
+
+      .education {
+        position: relative;
+        padding: 160px 24px;
+        background-image: url("image/education-bg.jpg");
+        /* same kind of flat-lay bg */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      /* Dark overlay */
+      .education::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 0;
+      }
+
+      /* Title */
+      .education-title {
+        position: relative;
+        z-index: 1;
+        font-family: "Playfair Display", serif;
+        font-size: 42px;
+        font-weight: 500;
+        color: #ffffff;
+        max-width: 1200px;
+        margin: 0 auto 48px;
+        padding: 0 32px;
+      }
+
+      /* Card */
+      .education-card {
+        position: relative;
+        z-index: 1;
+        max-width: 820px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 56px 64px;
+        border-radius: 22px;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
+      }
+
+      /* Text */
+      .education-card p {
+        font-family: "Inter", system-ui, sans-serif;
+        font-size: 18px;
+        line-height: 1.85;
+        color: #4b5563;
+        margin: 0;
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        .education-title {
+          font-size: 32px;
+        }
+
+        .education-card {
+          padding: 40px 36px;
+        }
+
+        .education-card p {
+          font-size: 16px;
+        }
+      }
+
+      /* ===== Clinical Projects & Initiatives ===== */
+
+      .clinical-section {
+        background: #9b9b9b;
+        padding: 120px 7%;
+      }
+
+      .clinical-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 90px;
+        align-items: center;
+      }
+
+      /* IMAGE */
+      .clinical-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 28px;
+        object-fit: cover;
+        display: block;
+      }
+
+      /* TEXT */
+      .clinical-text h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 3.4rem;
+        line-height: 1.1;
+        font-weight: 500;
+        margin-bottom: 34px;
+        color: #111;
+      }
+
+      .clinical-text p {
+        font-size: 1.05rem;
+        line-height: 1.9;
+        color: #2a2a2a;
+        margin-bottom: 24px;
+        max-width: 560px;
+      }
+
+      /* ===== Responsive ===== */
+      @media (max-width: 900px) {
+        .clinical-wrapper {
+          grid-template-columns: 1fr;
+          gap: 60px;
+        }
+
+        .clinical-text h2 {
+          font-size: 2.6rem;
+        }
+      }
+
+      .research-list {
+        list-style: disc;
+        padding-left: 20px;
+        max-width: 640px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+
+      .research-list li {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+        color: #5f6673;
+        margin-bottom: 14px;
+      }
+
+      /* ===== Leadership & Board Roles ===== */
+
+      .leadership-section {
+        background: #e6e6e3;
+        /* soft gray like reference */
+        padding: 140px 7%;
+      }
+
+      .leadership-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 100px;
+        align-items: center;
+      }
+
+      /* Image */
+      .leadership-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 28px;
+        object-fit: cover;
+        display: block;
+      }
+
+      /* Text */
+      .leadership-content h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 42px;
+        font-weight: 500;
+        margin-bottom: 32px;
+        color: #1a1a1a;
+      }
+
+      .leadership-content p {
+        font-family: "Inter", sans-serif;
+        font-size: 17px;
+        line-height: 1.9;
+        color: #5f6673;
+        max-width: 560px;
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        .leadership-wrapper {
+          grid-template-columns: 1fr;
+          gap: 60px;
+        }
+
+        .leadership-content h2 {
+          font-size: 32px;
+        }
+      }
+
+      /* ===== Recognition ===== */
+
+      .recognition-section {
+        background: #f7f8fa;
+        padding: 160px 7%;
+      }
+
+      .recognition-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .recognition-title {
+        font-family: "Playfair Display", serif;
+        font-size: 42px;
+        font-weight: 500;
+        margin-bottom: 100px;
+        color: #1a1a1a;
+      }
+
+      /* Row */
+      .recognition-row {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 120px;
+        align-items: center;
+        margin-bottom: 140px;
+      }
+
+      /* Text */
+      .recognition-text h3 {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 14px;
+        color: #111;
+      }
+
+      .recognition-text p {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 1.9;
+        color: #5f6673;
+        max-width: 520px;
+      }
+
+      /* Image placeholder */
+      .recognition-image {
+        width: 100%;
+        height: 340px;
+        border-radius: 22px;
+        background: #e5e7eb;
+      }
+
+      /* Placeholder style (optional visual cue) */
+      .recognition-image.placeholder {
+        background: linear-gradient(135deg,
+            #e5e7eb 0%,
+            #f1f3f5 100%);
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        .recognition-row {
+          grid-template-columns: 1fr;
+          gap: 48px;
+          margin-bottom: 100px;
+        }
+
+        .recognition-title {
+          font-size: 32px;
+          margin-bottom: 60px;
+        }
+
+        .recognition-image {
+          height: 260px;
+        }
+      }
+
+      .recognition-row {
+        display: flex;
+        align-items: center;
+        gap: 64px;
+        margin-bottom: 120px;
+      }
+
+      .recognition-text {
+        flex: 1;
+      }
+
+      .recognition-image {
+        flex: 1;
+        height: 420px;
+        border-radius: 24px;
+        overflow: hidden;
+        background: #f2f2f2;
+      }
+
+      .recognition-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* 🔥 THIS fixes the stretching */
+        object-position: center;
+        /* keeps subject centered */
+        display: block;
+
+        /* image clarity */
+        image-rendering: auto;
+        transform: scale(1.01);
+        /* subtle sharpness boost */
+      }
+
+      /* ===== INSIGHTS GRID (EXACT LAYOUT) ===== */
+
+      .insights-section {
+        padding: 120px 40px;
+        background: #f6f7f8;
+      }
+
+      .insights-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 48px;
+      }
+
+      .insight-card {
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 72px 48px 56px;
+        text-align: center;
+        position: relative;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+      }
+
+      /* ICON FLOATING ABOVE */
+      .icon-circle {
+        width: 72px;
+        height: 72px;
+        background: #f1f2f3;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        position: absolute;
+        top: -36px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      /* TYPOGRAPHY */
+      .insight-card h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #111;
+      }
+
+      .insight-card p {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+        color: #555;
+      }
+
+      /* MOBILE */
+      @media (max-width: 768px) {
+        .insights-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .insight-card {
+          padding: 64px 32px 48px;
+        }
+      }
+
+      /* CONTACT SECTION */
+
+
+      .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+      }
+
+      .contact-info h2 {
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+        color: #8ab4ff;
+      }
+
+      .contact-item {
+        margin-bottom: 30px;
+      }
+
+      .contact-item .label {
+        display: block;
+        font-size: 0.85rem;
+        letter-spacing: 1.5px;
+        color: #8ab4ff;
+        margin-bottom: 8px;
+      }
+
+      .contact-item p {
+        color: #d1d5db;
+        line-height: 1.6;
+        font-size: 0.95rem;
+      }
+
+      /* FORM */
+      .contact-form {
+        background: #1a1d23;
+        padding: 40px;
+        border-radius: 14px;
+      }
+
+      .contact-form label {
+        display: block;
+        margin-bottom: 6px;
+        color: #aeb4c0;
+        font-size: 0.9rem;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 14px;
+        margin-bottom: 20px;
+        background: #2a2e36;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 0.95rem;
+      }
+
+      .contact-form button {
+        width: 100%;
+        padding: 14px;
+        background: #2563eb;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      .contact-form button:hover {
+        background: #1d4ed8;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 900px) {
+        .contact-wrapper {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ===== CONTACT SECTION ===== */
+
+      /* ===== CONTACT SECTION ===== */
+
+
+      .contact-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 80px;
+      }
+
+      /* LEFT */
+      .contact-info h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 48px;
+        color: #6ea2ff;
+        margin-bottom: 40px;
+      }
+
+      .info-block {
+        margin-bottom: 28px;
+      }
+
+      .info-block .label {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        color: #6ea2ff;
+        margin-bottom: 6px;
+      }
+
+      .info-block p {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 1.6;
+      }
+
+      /* MAP */
+      .map-wrapper {
+        margin-top: 32px;
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      .map-wrapper iframe {
+        width: 100%;
+        height: 240px;
+        border: 0;
+      }
+
+      /* RIGHT CARD */
+      .contact-form-card {
+        background: #2a2b2f;
+        border-radius: 20px;
+        padding: 48px;
+      }
+
+      .contact-form-card label {
+        display: block;
+        font-size: 14px;
+        color: #cfcfcf;
+        margin-bottom: 6px;
+      }
+
+      .contact-form-card input,
+      .contact-form-card textarea {
+        width: 100%;
+        background: #3a3b40;
+        border: none;
+        border-radius: 10px;
+        padding: 14px 16px;
+        margin-bottom: 22px;
+        color: #fff;
+        font-size: 15px;
+      }
+
+      .contact-form-card input::placeholder,
+      .contact-form-card textarea::placeholder {
+        color: #9a9a9a;
+      }
+
+      .contact-form-card button {
+        width: 100%;
+        background: #2563eb;
+        border: none;
+        border-radius: 12px;
+        padding: 14px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      /* RESPONSIVE */
+
+      @media (max-width: 900px) {
+        .contact-container {
+          grid-template-columns: 1fr;
+        }
+
+        .contact-section {
+          padding: 80px 0 60px;
+        }
+      }
+
+      .contact-section {
+        background: #0f1013;
+        padding: 80px 0 60px;
+      }
+
+
+
+      /* Keep map light */
+      .map-wrapper,
+      .map-wrapper iframe {
+        background: #ffffff;
+      }
+
+      /* ===== Professional Focus – Light Image Background ===== */
+
+      .section.reveal.show {
+        position: relative;
+        padding: 160px 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Background image */
+        background-image: url("image/newprofess.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      /* Light overlay (keeps image visible) */
+      .section.reveal.show::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.55);
+        /* ← light, airy */
+        z-index: 0;
+      }
+
+
+      /* Keep card above overlay */
+      .section.reveal.show .focus-card {
+        position: relative;
+        z-index: 1;
+      }
+
+      /* ===== Education – Soft Gray Editorial Look ===== */
+
+      .education {
+        position: relative;
+        padding: 160px 24px;
+
+        background-image: url("image/education.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      /* Soft gray veil (NOT white, NOT dark) */
+      .education::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(235, 236, 238, 0.65);
+        /* 👈 key part */
+        z-index: 0;
+      }
+
+      /* Keep content above overlay */
+      .education>* {
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Optional: soften the card slightly to match reference */
+      .education-card {
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+      }
+
+      /* ===== Education – Soft Black Editorial Overlay ===== */
+
+      .education {
+        position: relative;
+        padding: 160px 24px;
+
+        background-image: url("image/education.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      /* Soft black veil (key difference) */
+      .education::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        /* 👇 THIS is the exact look */
+        background: rgba(15, 17, 21, 0.55);
+
+        z-index: 0;
+      }
+
+      /* Keep content above overlay */
+      .education>* {
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Card refinement (matches reference softness) */
+      .education-card {
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
+      }
+
+      /* Title readability */
+      .education-title {
+        color: #ffffff;
+      }
+
+      /* ===== Professional Focus – Background Image (ONLY this section) ===== */
+
+      #professional.section.reveal {
+        position: relative;
+        padding: 160px 24px;
+
+        background-image: url("image/newprofess.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      /* Soft black overlay (editorial, not dark) */
+      #professional.section.reveal::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background: rgba(15, 17, 21, 0.5);
+
+        z-index: 0;
+      }
+
+      /* Keep content above overlay */
+      #professional.section.reveal>* {
+        position: relative;
+        z-index: 1;
+      }
+
+      /* ===== Professional Focus background ===== */
+      .section.reveal.professional {
+        position: relative;
+        padding: 160px 24px;
+
+        background-image: url("image/newprofess.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      /* Soft black overlay */
+      .section.reveal.professional::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(15, 17, 21, 0.5);
+        z-index: 0;
+      }
+
+      /* Keep card above overlay */
+      .section.reveal.professional>* {
+        position: relative;
+        z-index: 1;
+      }
+
+      /* ================================
+   Selected Publications & Research
+   (huangshiyan.com-inspired layout)
+================================ */
+
+      .section.publications {
+        background: #f5f6f7;
+        /* soft light gray page background */
+        padding: 120px 24px;
+      }
+
+      .section.publications .focus-card {
+        max-width: 1100px;
+        margin: 0 auto;
+
+        background: #ffffff;
+        border-radius: 28px;
+        padding: 64px 72px;
+
+        box-shadow:
+          0 40px 80px rgba(0, 0, 0, 0.08);
+
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      /* Title */
+      .section.publications h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.6rem;
+        font-weight: 500;
+        color: #111;
+
+        margin-bottom: 32px;
+      }
+
+      /* Research list */
+      .section.publications .research-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .section.publications .research-list li {
+        position: relative;
+        padding-left: 22px;
+        margin-bottom: 20px;
+
+        font-family: "Inter", sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.75;
+        color: #4b5563;
+      }
+
+      /* Elegant bullet like huangshiyan.com */
+      .section.publications .research-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        top: 0.15em;
+
+        font-size: 1.4rem;
+        color: #9ca3af;
+      }
+
+      /* ================================
+   Selected Publications & Research
+   (huangshiyan.com-inspired layout)
+================================ */
+
+
+      .section.publications {
+        background: #f5f6f7;
+        /* soft light gray page background */
+        padding: 120px 24px;
+      }
+
+      .section.publications .focus-card {
+        max-width: 1100px;
+        margin: 0 auto;
+
+        background: #ffffff;
+        border-radius: 28px;
+        padding: 64px 72px;
+
+        box-shadow:
+          0 40px 80px rgba(0, 0, 0, 0.08);
+
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      /* Title */
+      .section.publications h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.6rem;
+        font-weight: 500;
+        color: #111;
+
+        margin-bottom: 32px;
+      }
+
+      /* Research list */
+      .section.publications .research-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .section.publications .research-list li {
+        position: relative;
+        padding-left: 22px;
+        margin-bottom: 20px;
+
+        font-family: "Inter", sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.75;
+        color: #4b5563;
+      }
+
+      /* Elegant bullet like huangshiyan.com */
+      .section.publications .research-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        top: 0.15em;
+
+        font-size: 1.4rem;
+        color: #9ca3af;
+      }
+
+      /* Mobile styles for Selected Publications & Research */
+      @media (max-width: 900px) {
+        .section.publications {
+          padding: 80px 16px;
+        }
+
+        .section.publications .focus-card {
+          padding: 40px 28px;
+        }
+
+        .section.publications h2 {
+          font-size: 2.1rem;
+        }
+      }
+
+      /* Selected Publications & Research layout */
+      .section.publications {
+        background: #f4f5f7;
+        padding: 120px 0;
+      }
+
+      .section.publications .focus-card {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 60px;
+        align-items: center;
+
+        background: white;
+        border-radius: 24px;
+        padding: 64px;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+      }
+
+      /* Text spacing */
+      .section.publications h2 {
+        margin-bottom: 24px;
+      }
+
+      .section.publications ul {
+        padding-left: 20px;
+      }
+
+      .section.publications li {
+        margin-bottom: 18px;
+        line-height: 1.7;
+      }
+
+      /* Publications section background */
+      .section.publications {
+        background: #f4f5f7;
+        padding: 120px 0;
+      }
+
+      /* Card layout */
+      .publications-layout {
+        max-width: 1100px;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 56px;
+        align-items: center;
+
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 64px;
+
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+      }
+
+      /* Text side */
+      .publications-text h2 {
+        margin-bottom: 28px;
+      }
+
+      .research-list {
+        padding-left: 18px;
+      }
+
+      .research-list li {
+        margin-bottom: 18px;
+        line-height: 1.65;
+        color: #555;
+      }
+
+      /* Image side */
+      .publications-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+        object-fit: cover;
+      }
+
+      /* Remove or reset the background-image property */
+      .publications-layout {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 56px;
+        align-items: center;
+
+        background: #ffffff;
+        /* Update this line to remove image background */
+        padding: 64px;
+
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+      }
+
+      /* FORCE white background for Selected Publications */
+      .publications-section {
+        background: #ffffff !important;
+        background-image: none !important;
+      }
+
+      /* Global Base */
+      html {
+        font-size: 18px;
+        /* critical: huangshiyan.com base size */
+      }
+
+      /* Body Text */
+      body {
+        font-size: 1rem;
+        /* 18px */
+        line-height: 1.7;
+      }
+
+      /* Headings (Editorial Scale) */
+      h1 {
+        font-size: 3.25rem;
+        /* ~58–60px */
+        line-height: 1.15;
+      }
+
+      h2 {
+        font-size: 2.4rem;
+        /* ~43px */
+        line-height: 1.25;
+      }
+
+      h3 {
+        font-size: 1.75rem;
+        /* ~31px */
+        line-height: 1.3;
+      }
+
+      h4 {
+        font-size: 1.3rem;
+        /* ~23px */
+      }
+
+      h5 {
+        font-size: 1.1rem;
+        /* ~20px */
+      }
+
+      /* Paragraphs & Lists */
+      p,
+      li {
+        font-size: 1rem;
+        /* 18px */
+        line-height: 1.75;
+      }
+
+      /* Small / Meta Text */
+      small,
+      .meta,
+      .caption {
+        font-size: 0.85rem;
+        /* ~15px */
+      }
+
+      /* Buttons / Nav / Links */
+      /* ================================
+   INDUSTRY PERSPECTIVE (HERO)
+================================ */
+
+      .hero-industry {
+        padding: 120px 0;
+        background: #f5f6f8;
+      }
+
+
+      .hero-industry-card {
+        max-width: 960px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 64px 72px;
+        border-radius: 20px;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+      }
+
+      /* Title */
+      .hero-industry-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #1a1a1a;
+        margin-bottom: 16px;
+      }
+
+      /* Body text */
+      .hero-industry-card p {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        line-height: 1.9;
+        color: #6b7280;
+        max-width: 880px;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .site-footer {
+        background: #0b0f14;
+        color: #9ca3af;
+        text-align: center;
+        padding: 48px 16px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <header>
+    <nav>
+      <div class="brand">Valence Medical Group</div>
+
+      <!-- Hamburger Menu Icon -->
+      <div class="menu-icon" id="menu-icon">
+        &#9776; <!-- This is the hamburger icon -->
+      </div>
+
+     <div class="menu">
+  <a href="#about">About</a>
+  <a href="#professional">Professional Focus</a>
+  <a href="#education">Education</a>
+  <a href="#recognition">Recognition</a>
+  <a href="#blog">Blog</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+
+    </nav>
+  </header>
+
+  <!-- Add CSS for the hamburger menu -->
+  <style>
+    /* Default state - hide the menu on small screens */
+    .menu {
+      display: flex;
+    }
+
+    .menu a {
+      margin-left: 32px;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .menu-icon {
+      display: none;
+      cursor: pointer;
+    }
+
+    /* Make the menu hidden by default on mobile */
+    @media (max-width: 900px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(247, 246, 243, 0.85);
+      }
+
+      .menu a {
+        margin: 20px;
+        font-size: 18px;
+      }
+
+      .menu-icon {
+        display: block;
+        font-size: 30px;
+      }
+    }
+
+    /* ===== FADE IN ON SCROLL ===== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .site-footer {
+      margin-top: auto;
+      background: #0b0c0f;
+      padding: 28px 0;
+      text-align: center;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.55);
+    }
+
+    .contact-section {
+      background: #0f1013;
+      padding: 80px 0 120px;
+      margin-bottom: 120px;
+      /* ← THIS LINE ENDS THE CONTACT VISUALLY */
+    }
+
+    .site-footer {
+      background: #ffffff;
+      color: #111;
+      padding: 40px 0;
+      text-align: center;
+    }
+    /* ===== Key Figures Section ===== */
+.key-figures-section {
+  padding: 100px 6%;
+  background-color: #f1f3f5;
+  text-align: center;
+}
+
+.key-figures-header .section-eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #0a4cff;
+  font-weight: 600;
+}
+
+.key-figures-header h2 {
+  font-size: 42px;
+  margin: 12px 0 60px;
+  color: #0b2545;
+}
+
+/* Grid */
+.key-figures-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card */
+.key-figure-card img {
+  width: 100%;
+  height: 460px;          /* portrait height */
+  object-fit: contain;   /* FULL portrait */
+  background-color: #e9ecef;
+  border-radius: 18px;
+}
+
+.key-figure-card h3 {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.key-figure-card p {
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 6px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .key-figures-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .key-figure-card img {
+    height: 420px;
+  }
+}
+.products-section {
+  padding: 160px 24px;
+  background: #ffffff;
+}
+
+.products-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.products-title {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  margin-bottom: 80px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.product-card {
+  cursor: pointer;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain; /* FIT well */
+  background: #f5f7fa;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.product-card h3 {
+  margin-top: 14px;
+  font-size: 15.5px;   /* balanced */
+  font-weight: 500;
+  line-height: 1.35;
+  color: #1f2937;
+  padding: 0 8px;
+  word-break: break-word;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .products-grid { grid-template-columns: 1fr; }
+}
+.product-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.product-modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  max-width: 860px;
+  width: 92%;
+  max-height: 90vh;          /* KEY */
+  overflow-y: auto;          /* KEY */
+  padding: 36px;
+  border-radius: 20px;
+  position: relative;
+  text-align: left;          /* better for long text */
+}
+
+.modal-main-image {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  background: #f5f7fa;
+  border-radius: 12px;
+}
+
+.modal-gallery {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.modal-gallery img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  cursor: pointer;
+  background: #f5f7fa;
+  border-radius: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+#modalTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 24px 0 12px;
+  line-height: 1.3;
+  color: #111827;
+}
+
+#modalDesc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 28px;
+  white-space: normal;
+}
+/* ===============================
+   GLOBAL CONTENT IMAGE SAFETY
+================================ */
+
+section:not(.products-section) img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  background: none;
+}
+/* ===============================
+   CONTACT SECTION LAYOUT
+================================ */
+
+.contact-section {
+  padding: 80px 6%;
+}
+
+.contact-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* LEFT: info + map */
+.contact-left {
+  flex: 1;
+  min-width: 0;
+}
+
+/* RIGHT: form */
+.contact-right {
+  flex: 1;
+  min-width: 0;
+}
+
+/* MAP */
+.contact-left iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 14px;
+  border: none;
+  margin-top: 32px;
+}
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+/* ===============================
+   CONTACT SECTION LAYOUT FIX
+================================ */
+
+.contact-section {
+  padding: 100px 24px;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+/* LEFT */
+.contact-info {
+  flex: 1;
+  max-width: 520px;
+}
+
+/* RIGHT */
+.contact-form-card {
+  flex: 1;
+  max-width: 480px;
+}
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-form-card,
+  .contact-info {
+    max-width: 100%;
+  }
+}
+/* ===============================
+   KEY FIGURES – PORTRAIT FIX
+   (ISOLATED – SAFE)
+================================ */
+
+.key-figures-section .key-figure-card img {
+  width: 100%;
+  height: 420px;                 /* uniform height */
+  object-fit: cover;             /* fills frame */
+  object-position: center top;   /* keeps faces visible */
+  border-radius: 18px;
+  display: block;
+}
+.key-figures-section .key-figure-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ===============================
+   KEY FIGURES – DESCRIPTION TEXT
+================================ */
+
+.key-figures-section .figure-desc {
+  margin-top: 10px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #6b7280; /* soft gray */
+  text-align: center;
+  max-width: 260px;   /* keeps it tidy */
+}
+.figure-title {
+  font-weight: 600;
+  color: #1f3a5f; /* professional dark blue */
+}
+.latest-blog-section {
+  padding: 80px 20px;
+}
+
+.latest-blog-header {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latest-blog-header h2 {
+  font-size: 32px;
+}
+
+.latest-blog-arrows {
+  display: flex;
+  gap: 12px;
+}
+
+.blog-arrow {
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #1e6bff;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.latest-blog-scroll {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.latest-blog-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.blog-card {
+  min-width: 360px;
+  background: #f6f9fc;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blog-card-info {
+  padding: 20px;
+}
+
+.blog-card-info span {
+  font-size: 13px;
+  color: #1e6bff;
+  font-weight: 600;
+}
+
+.blog-card-info h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.latest-wrapper {
+  overflow: hidden;
+}
+
+.latest-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+}
+.latest-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.latest-track {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.5s ease;
+}
+
+/* EACH CARD = 25% (4 per view) */
+.post-card {
+  flex: 0 0 calc(25% - 18px);
+}
+
+  </style>
+
+  <!-- JavaScript to Toggle the Hamburger Menu -->
+  <script>
+    // Get the menu icon and menu
+    const menuIcon = document.getElementById("menu-icon");
+    const menu = document.querySelector(".menu");
+
+    // Add a click event listener to the menu icon
+    menuIcon.addEventListener("click", () => {
+      // Toggle the display of the menu
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    });
+  </script>
+
+
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <section class="hero">
+    <!-- Video Background -->
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+      <source src="videobg.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Content -->
+    <div class="container hero-content">
+      <h1>Valence Medical Group</h1>
+      <p>
+        Valence Medical Group operates at the intersection of international business,
+        medical technology, and cross-border capital deployment. Our focus is not limited to
+        individual ventures or assets, but on how business platforms are structured, integrated,
+        and scaled to create sustainable long-term value.
+      </p>
     </div>
-</header>
+  </section>
 
-<!-- About Us -->
-<section id="about" class="section about-us">
-    <h2>Our Story</h2>
-    <p>GlobalVision Wealth Management was founded on the belief that sustainable wealth is built through discipline, clarity, and long-term perspective. Our team brings decades of experience across Asia, Europe, and North America, navigating market cycles and technological disruptions to deliver enduring success.</p>
-</section>
 
-<!-- Core Strengths -->
-<section id="core-strengths" class="section strengths">
-    <h2>Our Core Strengths</h2>
-    <div class="strengths-container">
-        <div class="strength">
-            <h3>Discipline & Long-Term Value Creation</h3>
-            <p>Capital preservation is prioritized, focusing on resilient portfolios built to withstand market cycles through fundamental analysis and structural opportunities.</p>
-        </div>
-        <div class="strength">
-            <h3>Institutional-Grade Risk Management</h3>
-            <p>Applying institutional risk controls, stress testing, and scenario analysis to ensure robustness even during liquidity stress and macroeconomic shifts.</p>
-        </div>
-        <div class="strength">
-            <h3>Customized Portfolio Construction</h3>
-            <p>Designing diversified portfolios aligned with individual risk tolerances, including traditional assets, digital assets, and defensive strategies.</p>
-        </div>
+
+
+  <!-- PROFILE -->
+  <section id="about" class="hero-profile reveal">
+
+    <div class="hero-profile-inner">
+
+      <!-- Left Image -->
+      <div class="hero-profile-image">
+      <img src="image/about.jpg" alt="About Valence Medical Group">
+      </div>
+
+
+      <!-- Right Content -->
+      <div class="hero-profile-content">
+        <h2>About Us</h2>
+        <p>
+          Valence Medical Group is a specialized investment and advisory firm with a background spanning international
+          business, medical technology, and cross-border capital strategy. With a foundation in Singapore and
+          operations extending to Los Angeles and New York, we bring a global perspective shaped by deep expertise
+          and hands-on experience in operating businesses across healthcare, beauty, and medical device distribution.
+          Our work centers on building and scaling platforms rather than isolated ventures, combining disciplined
+          investment
+          thinking, operational execution, and long-term value creation across global markets.
+        </p>
+      </div>
+
     </div>
+  </section>
+
+    <!-- LEADERSHIP & ADVISORY -->
+  <section class="clinical-section">
+    <div class="clinical-wrapper">
+
+      <!-- LEFT: IMAGE -->
+      <div class="clinical-image">
+        <img src="image/leader.jpg" alt="Leadership & Board Advisory">
+      </div>
+
+      <!-- RIGHT: CONTENT -->
+      <div class="clinical-text">
+        <h2>Leadership & Board Advisory</h2>
+
+        <p>
+          We provide consulting services to organizations in healthcare, international business, and regulated markets,
+          focusing on strategic positioning, cross-border execution, and long-term sustainable platform development. Our
+          work centers on providing professional insights on market access, operational structure, and capital
+          allocation, grounded in extensive practical experience within cross-border environments.
+        </p>
+
+        <p>
+          Our advisory approach emphasizes decision quality, risk awareness, and sustainable growth, prioritizing
+          long-term value over short-term optimization.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+ <section id="key-figures" class="key-figures-section">
+  <div class="key-figures-container">
+
+    <h2 class="key-figures-title">Key Figures</h2>
+
+    <div class="key-figures-grid">
+
+      <!-- Queenie -->
+      <div class="key-figure-card">
+        <img src="image/heroprofile.jpg" alt="Queenie J. Clark">
+
+        <h3>Queenie J. Clark</h3>
+        <p class="figure-title">Founder & Chief Executive Officer</p>
+
+        <p class="figure-desc">
+          Provides strategic leadership across healthcare innovation, cross-border
+          clinical integration, and long-term organizational development, with a
+          focus on scalable medical systems and global impact.
+        </p>
+      </div>
+
+      <!-- Jonathan -->
+      <div class="key-figure-card">
+        <img src="image/executive1.jpg" alt="Jonathan Miller">
+
+        <h3>Jonathan Miller</h3>
+        <p class="figure-title">Chief Operating Officer</p>
+
+        <p class="figure-desc">
+          Oversees operational strategy, execution, and organizational alignment,
+          ensuring efficient delivery of healthcare initiatives across international
+          markets and clinical platforms.
+        </p>
+      </div>
+
+      <!-- David -->
+      <div class="key-figure-card">
+        <img src="image/execute2.jpg" alt="David Ross">
+
+        <h3>David Ross</h3>
+        <p class="figure-title">Chief Financial Officer</p>
+
+        <p class="figure-desc">
+          Leads financial planning, capital strategy, and governance, supporting
+          sustainable growth and long-term value creation across healthcare and
+          life sciences ventures.
+        </p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- Contact / Get in Touch -->
-<section id="contact" class="section contact">
-    <h2>Get in Touch</h2>
-    <p>Offices: Singapore | Hong Kong | Global</p>
-    <p>Email: <a href="mailto:info@globalvisionwm.com">info@globalvisionwm.com</a></p>
-    <p>By appointment only</p>
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
-    </form>
+
+
+    <!-- OUR PRODUCTS -->
+<section id="products" class="products-section reveal">
+  <div class="products-container">
+
+    <h2 class="products-title">Our Products</h2>
+
+    <div class="products-grid">
+
+      <div class="product-card"
+        data-title="ECLIPSE Ji Digital Microscope"
+        data-desc="Product Description: ECLIPSE Ji (Ji Series) is Nikon's first fully digital research-grade inverted microscope. Leveraging AI, it automates operations from image acquisition to analysis, accelerating the elucidation of disease mechanisms—such as cancer, neurological disorders, and infectious diseases—as well as new drug development. This innovative intelligent imaging system enables anyone to conduct such research with ease, making it ideal for those involved in R&D related to identifying drug discovery seeds. ECLIPSE Ji also offers hardware scalability, supporting tasks ranging from routine analysis to applied research, thereby contributing to efficient and rapid drug development. The integrated housing of the Ji Series microscopes enables users to utilize embedded scientific-grade CMOS detectors, facilitating sample observation in bright outdoor environments or during remote operation."
+        data-images="image/product1.jpg">
+        <img src="image/product1.jpg" alt="ECLIPSE Ji Digital Microscope">
+        <h3>ECLIPSE Ji Digital Microscope</h3>
+      </div>
+
+      <div class="product-card"
+        data-title="Neuralink R1 Robot"
+        data-desc="Product Description: The Neuralink R1 robot can rapidly insert numerous flexible probes into the brain, avoiding tissue damage and longevity issues associated with larger, more rigid probes. Its surgical robotic insertion head features a 25-micrometer-diameter tungsten-rhenium needle used to connect to the insertion ring, deploy individual probes, and penetrate the meninges and brain tissue; it can insert up to six wires (192 electrodes) per minute. Linear motors power the needle, enabling rapid retraction acceleration and variable insertion speeds. A 50-micron tungsten wire bent at the tip, driven axially and rotationally, forms the forceps. The inserter head also incorporates an imaging stack for needle guidance, real-time insertion visualization, and verification."
+        data-images="image/product2.jpg">
+        <img src="image/product2.jpg" alt="Neuralink R1 Robot">
+        <h3>Neuralink R1 Robot</h3>
+      </div>
+
+      <div class="product-card"
+        data-title="Philips Digital X-ray 7000 M"
+        data-desc="Product Description: Radiography 7000 M is an advanced mobile radiography solution designed to deliver enhanced patient care and greater operational efficiency. Its sophisticated design offers exceptional system availability, effortless navigation, and easy positioning for swift and effective patient care. This advanced solution automates numerous routine tasks. The Radiography 7000 M's lithium-ion battery enables rapid charging and extended runtime, keeping your system ready throughout the entire shift and allowing you to see more patients per charge."
+        data-images="image/product3.jpg">
+        <img src="image/product3.jpg" alt="Philips Digital X-ray 7000 M">
+        <h3>Philips Digital X-ray 7000 M</h3>
+      </div>
+
+      <div class="product-card"
+        data-title="iSyncWave Dry-Electrode EEG Measurement Device"
+        data-desc="Product Description: iSyncWave is the first device integrating EEG and neurotherapy, delivering remote mental health care through an AI-powered digital brain health platform. It also incorporates QEEG-guided PBM phototherapy to activate mitochondrial and microglial activity in the brain. The device utilizes high-quality dry EEG sensors that automatically adapt to various sizes and shapes, retaining 10 to 20 system positions, and is equipped with a natural radioactive material (NORM) database matched to gender/age. It features AI-powered automatic analysis cloud technology and biomarkers capable of preemptively detecting any signs of aMCI at an early stage.
+
+Optimal targeted PBM protocols for Alzheimer's disease, stroke, and traumatic brain injury are currently under development. Concurrently, research by the U.S. Navy and Harvard Medical School has validated the safety and efficacy of PBM."
+        data-images="image/product4.jpg">
+        <img src="image/product4.jpg" alt="iSyncWave Dry-Electrode EEG Measurement Device">
+        <h3>iSyncWave Dry-Electrode EEG Measurement Device</h3>
+      </div>
+
+      <div class="product-card"
+        data-title="Zeta Cranial Navigation System"
+        data-desc="Product Description: Zeta is an innovative surgical navigation system designed specifically for neurosurgical procedures. By leveraging computer vision, artificial intelligence, and real-time tracking, the system empowers neurosurgeons to operate with precision in any surgical environment, thereby enhancing safety and efficacy. This rapidly deployable, single-cart system meets the demands of healthcare professionals in high-pressure environments. The Zeta Cranial Navigation System enables precise catheter placement within the brains of patients facing life-threatening conditions caused by cerebrospinal fluid accumulation and elevated intracranial pressure."
+        data-images="image/product5.jpg">
+        <img src="image/product5.jpg" alt="Zeta Cranial Navigation System">
+        <h3>Zeta Cranial Navigation System</h3>
+      </div>
+
+      <div class="product-card"
+        data-title="VELYS™ Robot-Assisted"
+        data-desc="Product Description：The VELYS™ robotic-assisted solution comprises a surgical platform and an easy-to-operate robotic arm designed to enhance surgical precision by optimizing implant placement through integrated non-CT technology. This system provides surgeons with the information needed to preserve soft tissue capsules, predict joint stability, and restore knee function. When combined with the ATTUNE™ Knee System and SIGMA™ HP Partial Knee System, the VELYS™ Robotic-Assisted Solution has the potential to improve accuracy and repeatability in TKA and UKA procedures. Key integrated features include: ADAPTIVE™ Tracking Technology, NATURAL CONTROL™ Technology, ACCUBALANCE™ Charting, and PROADJUST™ Planning."
+        data-images="image/product7.jpg">
+        <img src="image/product7.jpg" alt="VELYS™ Robot-Assisted">
+        <h3>VELYS™ Robot-Assisted</h3>
+      </div>
+
+      <div class="product-card"
+        data-title="NeuroLF Dedicated Brain PET Scanner"
+        data-desc="Product Description：The NeuroLF dedicated brain PET scanner supports a paradigm shift in medical imaging, where specialized equipment can image specific body parts or organs. Mature technologies from cardiac imaging are now being applied to brain imaging. Comprising a patient positioning system and a scanning unit, it positions the scanner head around the patient's head. This system will make functional brain imaging for conditions like dementia, epilepsy, encephalitis, brain cancer, and Parkinson's disease more affordable. Priced at one-tenth the cost of traditional scanners (reducing expenses for equipment, personnel, and radioactive tracers), it occupies only one-fifth the volume of conventional scanners."
+        data-images="image/product6.jpg">
+        <img src="image/product6.jpg" alt="NeuroLF Dedicated Brain PET Scanner">
+        <h3>NeuroLF Dedicated Brain PET Scanner</h3>
+      </div>
+
+      <div class="product-card"
+        data-title="Micro-X Head CT"
+        data-desc="Product Description：The Micro-X Brain CT Scanner is a lightweight, ambulance-based device enabling rapid on-site diagnosis and treatment during stroke emergencies. It allows medical personnel to scan a patient's brain in just eight seconds at any location, then immediately forward the images to stroke specialists for evaluation. Weighing just 154 pounds (70 kg) compared to 500 kg for traditional CT units, the Micro-X Head CT device generates images using one-third the radiation dose of conventional CT. Unlike traditional CT, it employs an arc-shaped array of 21 micro X-ray emitters and curved detectors to deliver diagnostic-grade 3D imaging."
+        data-images="image/product8.jpg">
+        <img src="image/product8.jpg" alt="Micro-X Head CT">
+        <h3>Micro-X Head CT</h3>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- Footer -->
-<footer class="footer">
-    <p>&copy; 2024 GlobalVision Wealth Management. All rights reserved.</p>
-</footer>
+<!-- PRODUCT MODAL -->
+<div class="product-modal" id="productModal">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close">&times;</button>
+
+    <img class="modal-main-image" id="modalMainImage" alt="">
+    <h3 class="modal-title" id="modalTitle"></h3>
+    <p class="modal-description" id="modalDesc"></p>
+
+    <div class="modal-gallery" id="modalGallery"></div>
+  </div>
+</div>
+
+<div class="product-card"
+  data-title="Advanced Multi-Modal Precision Diagnostic System for Clinical & Research Environments"
+  data-desc="This platform integrates multi-layer diagnostic workflows designed to support
+  high-complexity clinical environments. It enables scalable deployment across hospital systems,
+  supports longitudinal patient data integration, and is optimized for cross-border regulatory
+  compliance and operational efficiency across global healthcare ecosystems."
+  data-images="image/prod1-1.jpg,image/prod1-2.jpg,image/prod1-3.jpg">
+
+
+  <!-- INDUSTRY PERSPECTIVE -->
+  <section class="hero-industry reveal">
+    <div class="container">
+      <div class="hero-industry-card">
+        <h2>Industry Perspective</h2>
+        <p>
+          Cross-border business today requires more than capital deployment; it
+          demands operational discipline, cultural fluency, and the ability to
+          scale platforms across regulated industries. Value is created by
+          integrating strategy, execution, and long-term ownership rather than
+          treating ventures as isolated assets. Sustainable growth emerges where
+          international business, medical technology, and consumer-facing
+          healthcare intersect—guided by practical experience in building,
+          operating, and expanding enterprises across global markets.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EDUCATION & CAREER -->
+  <section id="professional" class="section reveal professional">
+
+    <div class="focus-card">
+      <h2>Professional Focus</h2>
+      <p>
+        Our professional focus is centered on four key pillars of medical innovation: intelligent auxiliary
+        diagnostic products, intelligent auxiliary treatment products, intelligent monitoring and life support systems,
+        and intelligent rehabilitation and physiotherapy solutions. By integrating these advanced systems with clinical
+        data, we aim to build comprehensive platforms that enhance precision in diagnosis and treatment, ensuring
+        continuous, high-quality care and operational scalability across global healthcare networks.
+      </p>
+    </div>
+  </section>
+
+  <!-- ORIGIN -->
+  <section id="background" class="background-section">
+    <div class="background-grid">
+
+      <!-- Background Narrative -->
+      <div class="background-card">
+        <h2>Background Narrative</h2>
+        <p>
+          My path has been shaped by working across international business, healthcare,
+          and investment, with a consistent focus on how platforms are built, integrated,
+          and scaled across borders. Experience operating in regulated industries revealed
+          the limits of isolated ventures and underscored the importance of systems,
+          execution, and long-term ownership. Over time, this perspective evolved into a
+          disciplined approach to building sustainable enterprises where strategy,
+          capital, and operations align to create durable value.
+        </p>
+      </div>
+
+      <!-- Professional Experience -->
+      <div class="background-card">
+        <h2>Professional Experience</h2>
+
+        <div class="experience-item">
+          <strong>International Business, Healthcare & Medical Technology</strong><br>
+          <span class="experience-period">(2016–Present)</span>
+          <p>
+            Building and scaling cross-border platforms across healthcare and regulated
+            industries, integrating capital strategy, operational execution, and
+            long-term ownership across global markets.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- EDUCATION -->
+  <section id="education" class="education reveal">
+    <h2 class="education-title">Education</h2>
+
+    <div class="education-card">
+     <p>
+  Queenie J. Clark received her education at the National University of Singapore, where she established a strong
+  foundation in marketing and business management. Through advanced commercial training at the NUS Business School,
+  she developed the strategic expertise and market acumen that continue to guide her work in scaling global platforms.
+</p>
+    </div>
+  </section>
+
+
+
+  <!-- PHILOSOPHY -->
+  <section class="clinical-section">
+    <div class="clinical-wrapper">
+
+      <!-- LEFT: IMAGE -->
+      <div class="clinical-image">
+        <img src="image/clinical.jpg" alt="Clinical Projects & Initiatives">
+      </div>
+
+      <!-- RIGHT: CONTENT -->
+      <div class="clinical-text">
+        <h2>
+          Clinical Projects &<br>
+          Initiatives
+        </h2>
+
+        <p>
+          Design and leadership of strategic initiatives supporting healthcare-adjacent
+          and commercial programs, integrating market insight, brand strategy, and
+          cross-functional execution into scalable operating models.
+        </p>
+
+        <p>
+          Projects span market expansion, strategic partnerships, and organizational
+          development, with a focus on long-term value creation, stakeholder alignment,
+          and sustainable growth.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SELECTED PUBLICATIONS & RESEARCH -->
+  <section class="section reveal publications">
+    <div class="focus-card publications-layout">
+
+      <!-- LEFT: TEXT -->
+      <div class="publications-text">
+        <h2>Selected Publications & Research</h2>
+
+        <ul class="research-list">
+          <li>Applied research and analytical work focused on cross-border healthcare platforms, medical trade systems,
+            and regulated market structures</li>
+          <li>Market and operational studies supporting healthcare-adjacent businesses, including medical device
+            distribution, consumer health, and clinical service platforms</li>
+          <li>Strategic analysis on technology integration, including AI-assisted data evaluation and decision-support
+            tools within healthcare and international business contexts</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT: IMAGE -->
+      <div class="publications-image">
+        <img src="image/professional.jpg" alt="Research environment">
+      </div>
+
+    </div>
+  </section>
+
+<section class="latest-posts">
+  <div class="latest-header">
+    <h2>Latest Posts</h2>
+
+    <div class="slider-buttons">
+      <button id="prev">‹</button>
+      <button id="next">›</button>
+    </div>
+  </div>
+
+  <div class="latest-wrapper">
+  <div class="latest-track">
+
+    <!-- POST 1 -->
+    <a href="blog.html?id=monitoring" class="post-card">
+      <img src="image/blog1.jpg">
+      <div class="post-info">
+        <span>2025-09-23</span>
+        <h3>Improving Patient Monitoring And Diagnostics</h3>
+      </div>
+    </a>
+
+    <!-- POST 2 -->
+    <a href="blog.html?id=safety" class="post-card">
+      <img src="image/blog2.jpg">
+      <div class="post-info">
+        <span>2025-09-23</span>
+        <h3>Ensuring Patient Safety And Reducing Cross-Contamination</h3>
+      </div>
+    </a>
+
+    <!-- POST 3 -->
+    <a href="blog.html?id=robotic" class="post-card">
+      <img src="image/blog3.jpg">
+      <div class="post-info">
+        <span>2025-09-23</span>
+        <h3>Minimally Invasive Surgery With Robotic Assistance</h3>
+      </div>
+    </a>
+
+    <!-- POST 4 -->
+    <a href="blog.html?id=eco" class="post-card">
+      <img src="image/blog4.jpg">
+      <div class="post-info">
+        <span>2025-09-23</span>
+        <h3>Eco-Friendly Innovations In Medical Supplies</h3>
+      </div>
+    </a>
+
+    <!-- 🔁 DUPLICATE ALL 4 POSTS AGAIN HERE -->
+
+  </div>
+</div>
+<section class="latest-posts">
+  <h2>Latest Posts</h2>
+
+  <!-- 👇 THIS GOES HERE -->
+  <div class="latest-wrapper">
+    <div class="latest-track">
+      post cards here
+    </div>
+  </div>
+
+</section>
+
+
+
+ <!-- RECOGNITION -->
+  <section id="recognition" class="recognition-section reveal">
+    <div class="recognition-container">
+
+      <h2 class="recognition-title">Recognition</h2>
+
+      <!-- Item 1 -->
+      <div class="recognition-row">
+        <div class="recognition-text">
+          <h3>Strategic Healthcare Leadership Engagements</h3>
+          <p>
+            Recognized through participation in closed-door healthcare leadership
+            forums and executive discussions focused on precision medicine,
+            healthcare system design, and cross-border clinical integration.
+          </p>
+        </div>
+        <div class="recognition-image">
+          <img src="image/recog1.jpg" alt="Strategic Healthcare Leadership Engagements">
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="recognition-row">
+        <div class="recognition-text">
+          <h3>International Collaboration & Advisory Dialogues</h3>
+          <p>
+            Recognized through involvement in international advisory dialogues
+            addressing cross-border market coordination, organizational structure,
+            and strategic collaboration across healthcare and business ecosystems.
+          </p>
+        </div>
+        <div class="recognition-image">
+          <img src="image/recog2.jpg" alt="International Collaboration & Advisory Dialogues">
+        </div>
+      </div>
+
+
+      <!-- Item 3 -->
+      <div class="recognition-row">
+        <div class="recognition-text">
+          <h3>Philanthropy & Social Impact Initiatives</h3>
+          <p>
+            Recognized through engagement in healthcare philanthropy initiatives
+            supporting health education, system capacity building, and long-term
+            community impact across international contexts.
+          </p>
+        </div>
+        <div class="recognition-image">
+          <img src="image/recog3.jpg" alt="Philanthropy & Social Impact Initiatives">
+        </div>
+      </div>
+
+
+  </section>
+
+  <section class="insights-section">
+    <div class="insights-grid">
+
+      <div class="insight-card">
+        <div class="icon-circle">🧠</div>
+        <h3>Industry Perspective</h3>
+        <p>
+          Dedicated to transforming scientific and clinical innovation into scalable healthcare systems through
+          governance design, data integration, and incentive infrastructure.
+        </p>
+      </div>
+
+      <div class="insight-card">
+        <div class="icon-circle">🎤</div>
+        <h3>Speaking Engagements & Media</h3>
+        <p>
+          Regularly invited to address international medical and life sciences conferences, healthcare innovation
+          forums, and academic institutions, sharing insights on the future of integrated care.
+        </p>
+      </div>
+
+      <div class="insight-card">
+        <div class="icon-circle">🏅</div>
+        <h3>Awards & Honors</h3>
+        <p>
+          Honored with multiple academic and professional accolades acknowledging contributions to translational
+          research, clinical leadership, and strategic healthcare innovation.
+        </p>
+      </div>
+
+      <div class="insight-card">
+        <div class="icon-circle">🌍</div>
+        <h3>Professional Affiliations</h3>
+        <p>
+          Maintain active leadership roles within prominent international medical, scientific, and healthcare
+          organizations, driving cross-border collaboration across Asia and Europe.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+
+      <!-- LEFT SIDE -->
+      <div class="contact-info">
+        <h2>Contact</h2>
+
+        <div class="info-block">
+          <span class="label">EMAIL</span>
+          <p>qclarkvalence@icloud.com</p>
+        </div>
+
+        <div class="info-block">
+          <span class="label">PHONE</span>
+          <p>+1 646 271 7997</p>
+        </div>
+
+        <div class="info-block">
+          <span class="label">OFFICE ADDRESS</span>
+          <p>
+            285 Fulton St<br>
+            New York, NY 10007
+          </p>
+        </div>
+
+        <div class="map-wrapper">
+          <iframe src="https://www.google.com/maps?q=285+Fulton+St,+New+York,+NY+10007&output=embed" width="100%"
+            height="280" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="contact-form-card">
+        <form>
+          <label>Name</label>
+          <input type="text" placeholder="Your Name" />
+
+          <label>Email</label>
+          <input type="email" placeholder="Your Email" />
+
+          <label>Message</label>
+          <textarea rows="5" placeholder="Your Message"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+
+  <style>
+    /* Formal Footer Compliance - Centered & Stacked */
+    .site-footer {
+      background-color: #f9fafb;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      padding: 60px 24px;
+      font-family: "Inter", sans-serif;
+      margin-top: 80px;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-copyright {
+      color: #9ca3af;
+      font-size: 13px;
+      letter-spacing: 0.02em;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-links a {
+      display: block;
+      color: #585e68;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: #1a1a1a;
+    }
+  </style>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-copyright">
+        &copy; 2026 Valence Medical Group. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Intellectual Property</a>
+        <a href="#">Imprint</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    const obs = new IntersectionObserver(e => {
+      e.forEach(x => x.isIntersecting && x.target.classList.add("show"))
+    }, { threshold: .15 });
+    document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const fadeElements = document.querySelectorAll(".fade-in");
+
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+              observer.unobserve(entry.target); // animate once
+            }
+          });
+        },
+        {
+          threshold: 0.2
+        }
+      );
+
+      fadeElements.forEach(el => observer.observe(el));
+    });
+  </script>
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      },
+      {
+        threshold: 0.15
+      }
+    );
+
+    reveals.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+<div class="product-modal" id="productModal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+
+    <img id="modalMainImage" class="modal-main-image">
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+
+    <div class="modal-gallery" id="modalGallery"></div>
+  </div>
+</div>
 
 <script>
-  // Optional: Add form submission handling here
+const modal = document.getElementById("productModal");
+const modalTitle = document.getElementById("modalTitle");
+const modalDesc = document.getElementById("modalDesc");
+const modalMainImage = document.getElementById("modalMainImage");
+const modalGallery = document.getElementById("modalGallery");
+
+document.querySelectorAll(".product-card").forEach(card => {
+  card.addEventListener("click", () => {
+    const images = card.dataset.images.split(",");
+    modalTitle.textContent = card.dataset.title;
+    modalDesc.textContent = card.dataset.desc;
+    modalMainImage.src = images[0];
+
+    modalGallery.innerHTML = "";
+    images.forEach(img => {
+      const thumb = document.createElement("img");
+      thumb.src = img;
+      thumb.onclick = () => modalMainImage.src = img;
+      modalGallery.appendChild(thumb);
+    });
+
+    modal.classList.add("show");
+  });
+});
+
+document.querySelector(".modal-close").onclick = () =>
+  modal.classList.remove("show");
+
+modal.onclick = e => {
+  if (e.target === modal) modal.classList.remove("show");
+};
 </script>
 
-</body>
-</html>
-/* Navigation styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #003366;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
+  <script>
+const blogScroll = document.getElementById('latestBlogScroll');
+const cardWidth = 360 + 24;
 
-.navbar .logo {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.5em;
-}
+document.querySelector('.blog-arrow.right').onclick = () => {
+  blogScroll.scrollBy({ left: cardWidth, behavior: 'smooth' });
+};
 
-.nav-links {
-    list-style: none;
-    display: flex;
-}
+document.querySelector('.blog-arrow.left').onclick = () => {
+  blogScroll.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+};
+</script>
+<script>
+  const track = document.querySelector(".latest-track");
+  const slides = document.querySelectorAll(".post-card");
+  let index = 0;
 
-.nav-links li {
-    margin-left: 20px;
-}
+  function nextSlide() {
+    index++;
+    track.style.transform = `translateX(-${index * (slides[0].offsetWidth + 30)}px)`;
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-}
+    if (index >= slides.length / 2) {
+      setTimeout(() => {
+        track.style.transition = "none";
+        index = 0;
+        track.style.transform = "translateX(0)";
+        requestAnimationFrame(() => {
+          track.style.transition = "transform 0.5s ease";
+        });
+      }, 500);
+    }
+  }
 
-.nav-links a:hover {
-    text-decoration: underline;
-}
+  setInterval(nextSlide, 4000);
+</script>
+
+  </body>
+
+  </html>
